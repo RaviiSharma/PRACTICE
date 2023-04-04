@@ -29,6 +29,20 @@ app.use('/', route)
 app.listen(process.env.PORT || 3000 , function () {
     console.log('Express app running on port' + (process.env.PORT || 3000 ))
 });
+//_____multer  middleware module of express.js_________________________________________________________________
+
+// Multer is a middleware module for handling multipart/form-data in Node.js. It is commonly used in Express.js
+//  web applications for handling file uploads.
+
+const multer = require('multer');
+const upload = multer({ dest: 'uploads/' });
+
+app.post('/upload', upload.single('myFile'), (req, res) => {
+    // req.file contains information about the uploaded file
+    // req.body contains the values of the text fields of the form
+    res.send('File uploaded!');
+  });
+  
 
 //___JWT TOKEN ______________________________________________________________________________________
 
