@@ -175,3 +175,27 @@ address.shipping.city = cityNameByPinCode;
 //     "nodemon": "^2.0.20"
 //   }
 
+
+//_________Destructuring__________
+
+// Destructuring is a feature in JavaScript that allows you to extract values from arrays, objects,
+//  and other data structures into separate variables
+
+const myArray = [1, 2, 3];
+const [a, b, c] = myArray;
+
+console.log(a); // 1
+console.log(b); // 2
+console.log(c); // 3
+
+
+//MVC stands for Model-View-Controlle
+
+// Model: The model represents the data and business logic of the application. It is responsible for
+//  managing data storage, retrieval, and manipulation.
+
+//  View: The view is responsible for presenting the data to the user and capturing user input.
+
+//  Controller: The controller is responsible for handling user input and updating the model and view accordingly.
+
+//MVC is commonly used in web development frameworks such as Ruby on Rails, ASP.NET, and Laravel
